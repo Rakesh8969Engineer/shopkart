@@ -1,13 +1,69 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Syne";
+  box-sizing: border-box;
 }
+
+.alignment {
+  margin: 0rem 5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .alignment {
+    margin: 0rem 0.25rem;
+  }
+
+  .footer-end-text-li {
+    color: whitesmoke;
+    transform: scaleX(0);
+    font-weight: bold;
+    margin-top: -8rem;
+  }
+
+  .h-line-productpage {
+    border-top: 1px solid black;
+    max-width: 98vw !important;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: auto !important;
+    gap: 20px;
+  }
+
+  #heroimage {
+    display: none;
+  }
+
+  .align-txt {
+    display: none;
+  }
+
+  .v-line {
+    border-left: 10px solid #626262;
+    height: 1rem !important;
+    margin: 0px 0.25rem !important;
+  }
+
+  .muiicon {
+    font-size: 1rem !important;
+  }
+
+  .h-line {
+    border-top: 1px solid white;
+    max-width: 100%;
+    margin: 0rem 0.95rem;
+  }
+
+  .shipicon {
+    font-size: 1.25rem !important;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
